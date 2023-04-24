@@ -1,0 +1,106 @@
+@use "./variables" as *;
+
+// FOOTER
+
+footer {
+    background-image: url(/assets/cow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // height: 50vh;
+    margin-top: 10vh;
+    background-position: bottom;
+}
+
+.fourContainer {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 75px;
+}
+
+.footerOneFourthBox {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    justify-content: space-between;
+}
+
+.footerOregIcon {
+    width: 96px;
+}
+
+.footerOneFourthBox p,
+.footerOneFourthBox a,
+.footerOneFourthBox form {
+    font-size: .75rem;
+}
+
+.footerImgContainer {
+    width: 83px;
+    min-width: 83px;
+
+}
+
+.footerOneFourthBox a,
+a:visited {
+    text-decoration: none;
+    color: #1A2428;
+}
+
+a:hover {
+    color: $Green;
+}
+
+.footerIconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerIconContainer img {
+    background-color: #207200;
+    border-radius: 50px;
+    padding: 10px;
+    width: 33px;
+    min-width: 33px;
+    height: 33px;
+    min-height: 33px;
+    text-align: center;
+    margin: 0 auto 0 0;
+}
+
+.fourContainer h4 {
+    margin-top: 0px;
+    letter-spacing: 3px;
+}
+
+.recentProductsContainers {
+    display: flex;
+    flex-direction: row;
+}
+
+.recentProductsContainers img {
+    width: 70px;
+    height: 70px;
+}
+
+.thirteenDollars {
+    color: #207200;
+}
+
+.productAndPrice {
+    padding-left: 10px;
+}
+
+.copyrightSymbol {
+    text-align: center;
+    font-size: .75rem;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+}
+
+.footerOneFourthBox input {
+    padding: 8px;
+    font-size: .6rem;
+    width: 100%;
+}

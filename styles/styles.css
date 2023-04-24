@@ -1,3 +1,104 @@
+footer {
+  background-image: url(/assets/cow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 10vh;
+  background-position: bottom;
+}
+
+.fourContainer {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 75px;
+}
+
+.footerOneFourthBox {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  justify-content: space-between;
+}
+
+.footerOregIcon {
+  width: 96px;
+}
+
+.footerOneFourthBox p,
+.footerOneFourthBox a,
+.footerOneFourthBox form {
+  font-size: 0.75rem;
+}
+
+.footerImgContainer {
+  width: 83px;
+  min-width: 83px;
+}
+
+.footerOneFourthBox a,
+a:visited {
+  text-decoration: none;
+  color: #1A2428;
+}
+
+a:hover {
+  color: #207200;
+}
+
+.footerIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerIconContainer img {
+  background-color: #207200;
+  border-radius: 50px;
+  padding: 10px;
+  width: 33px;
+  min-width: 33px;
+  height: 33px;
+  min-height: 33px;
+  text-align: center;
+  margin: 0 auto 0 0;
+}
+
+.fourContainer h4 {
+  margin-top: 0px;
+  letter-spacing: 3px;
+}
+
+.recentProductsContainers {
+  display: flex;
+  flex-direction: row;
+}
+
+.recentProductsContainers img {
+  width: 70px;
+  height: 70px;
+}
+
+.thirteenDollars {
+  color: #207200;
+}
+
+.productAndPrice {
+  padding-left: 10px;
+}
+
+.copyrightSymbol {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 0px;
+  padding-bottom: 13px;
+}
+
+.footerOneFourthBox input {
+  padding: 8px;
+  font-size: 0.6rem;
+  width: 100%;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -262,10 +363,9 @@ button {
 nav {
   display: flex;
   background-color: #fff;
-  padding-top: 10px;
-  height: 10vh;
+  align-items: center;
+  height: 90px;
 }
-
 nav .wrapper {
   display: flex;
 }
@@ -275,8 +375,8 @@ ul {
   list-style: none;
   justify-content: space-between;
   gap: 2rem;
+  padding-left: 0px;
 }
-
 ul li a {
   text-decoration: none;
   color: #1A2428;
@@ -301,7 +401,7 @@ header {
   background-image: url(/assets/header/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: calc(100vh - 90px);
 }
 
 .headerContainer {
@@ -317,7 +417,6 @@ header {
   width: 50%;
   padding-right: 5%;
 }
-
 .textContainer p {
   font-size: 0.75rem;
   line-height: 1.1rem;
@@ -395,6 +494,11 @@ h3 {
   border: solid rgba(197, 197, 197, 0.16);
   width: calc(25% - 20px);
   min-width: 200px;
+  font-size: 0.75rem;
+}
+
+.mixVegetableContainerText {
+  padding: 0px 20px;
 }
 
 .mixVegetableContainer button {
@@ -420,7 +524,7 @@ span.oldPrice {
 .ourGalleryTitle {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .ourGalleryTitle p {
@@ -429,10 +533,22 @@ span.oldPrice {
   line-height: 1.1rem;
 }
 
+.ourGalleryTitle h3 {
+  text-align: center;
+}
+
+.ourGalleryTitle ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .gallery {
   background-image: url(/assets/grass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 100px;
 }
 
 .galleryImageContainerThird {
@@ -457,7 +573,7 @@ span.oldPrice {
 
 .latestNewsSection {
   background-color: #207200;
-  height: 100vh;
+  padding-bottom: 100px;
 }
 
 .latestNewsSection p {
@@ -476,139 +592,55 @@ span.oldPrice {
 .lastestNewsImageBoxes {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  align-items: center;
 }
 
 .blogImageContainer {
   background-color: #fff;
   padding: 10px 10px 30px 10px;
-  width: 32%;
 }
 
 .blogImageContainer p {
   font-size: 0.75rem;
 }
 
-footer {
-  background-image: url(/assets/cow.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 50vh;
-  margin-top: 10vh;
-  background-position: bottom;
-}
-
-.fourContainer {
-  display: flex;
-  gap: 20px;
-}
-
-.footerOneFourthBox {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
-  justify-content: space-between;
-}
-
-.footerOregIcon {
-  width: 96px;
-}
-
-.footerOneFourthBox p,
-.footerOneFourthBox a,
-.footerOneFourthBox form {
-  font-size: 0.75rem;
-}
-
-.footerImgContainer {
-  width: 83px;
-  min-width: 83px;
-}
-
-.footerOneFourthBox a, a:visited {
-  text-decoration: none;
-  color: #1A2428;
-}
-
-a:hover {
-  color: #207200;
-}
-
-.footerIconContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.footerIconContainer img {
-  background-color: #207200;
-  border-radius: 50px;
-  padding: 10px;
-  width: 33px;
-  min-width: 33px;
-  height: 33px;
-  min-height: 33px;
-  text-align: center;
-  margin: 0 auto 0 0;
-}
-
-.fourContainer h4 {
-  margin-top: 0px;
-  letter-spacing: 3px;
-}
-
-.recentProductsContainers {
-  display: flex;
-  flex-direction: row;
-}
-
-.recentProductsContainers img {
-  width: 70px;
-  height: 70px;
-}
-
-.thirteenDollars {
-  color: #207200;
-}
-
-.productAndPrice {
-  padding-left: 10px;
-}
-
-.copyrightSymbol {
-  text-align: center;
-  position: relative;
-  bottom: -87px;
-  margin-top: 0px;
-  font-size: 0.75rem;
-}
-
-.footerOneFourthBox input {
-  padding: 8px;
-  font-size: 0.6rem;
-  width: 100%;
-}
-
 /* CONTACT PAGE */
 /* Contact Us Banner */
 .contactUsBanner {
-  background: url(/assets/contact.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 50vh;
+  height: 311px;
+  position: relative;
   display: flex;
-  background-blend-mode: darken;
+  z-index: 1;
+}
+.contactUsBanner h1 {
+  font-size: 2rem;
+}
+.contactUsBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(/assets/contact.jpg);
+  filter: brightness(0.5);
+  background-position: center;
 }
 
-.contactUsBanner .wrapper h1 {
+.contactUsBanner .wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 10.5%;
+  align-items: center;
   color: #fff;
   font-size: 1.5rem;
 }
 
+.contactUsBanner h1 {
+  font-weight: 400;
+}
+
 .contactAndForm {
   display: flex;
+  padding-top: 50px;
 }
 
 .officePhoneEmailContainer {
@@ -660,4 +692,92 @@ a:hover {
 .formContainer button {
   margin: 0 auto;
   width: 120px;
+}
+
+@media (max-width: 1024px) {
+  .lastestNewsImageBoxes {
+    flex-direction: column;
+  }
+  .blogImageContainer {
+    width: 350px;
+    max-width: 80vw;
+  }
+}
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    gap: 20px;
+  }
+  .textContainer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .headerImageContainer {
+    width: 100%;
+  }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .greenContainer {
+    width: 100%;
+  }
+  .greenContainer p {
+    text-align: center;
+  }
+  .vegetableProducts {
+    justify-content: center;
+  }
+  .latestNewsTextContainer {
+    text-align: center;
+  }
+  .lastestNewsImageBoxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .blogImageContainer {
+    text-align: center;
+  }
+  .fourContainer {
+    flex-direction: column;
+  }
+  .footerOneFourthBox {
+    width: 100%;
+    align-items: center;
+  }
+  .footerIconContainer {
+    gap: 20px;
+  }
+  .contactAndForm {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .officePhoneEmailContainer {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .footerOneFourthBox p,
+.footerOneFourthBox a,
+.footerOneFourthBox form {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .navContainer ul {
+    gap: 1rem;
+    padding-left: 6px;
+  }
+  .aboutContainer {
+    padding: 25px 0px;
+  }
+  .ourProductsTitle {
+    padding: 25px 0px;
+  }
 }
