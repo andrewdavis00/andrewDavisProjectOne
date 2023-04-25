@@ -1,0 +1,151 @@
+@use "./variables" as *;
+
+@media (max-width: 1024px) {
+
+    // latest news section media queries 
+    .lastestNewsImageBoxes {
+        flex-direction: column;
+    }
+
+    .blogImageContainer {
+        width: 350px;
+        max-width: 80vw;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+
+    header {
+        height: 100%;
+
+        .textContainer {
+            padding-right: 0%;
+        }
+    }
+
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        gap: 20px;
+    }
+
+    .textContainer {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerImageContainer {
+        width: 100%;
+    }
+
+    // about section media queries 
+
+    .aboutContainer {
+        flex-direction: column;
+    .textContainer {
+        padding-right: 0%;
+        }
+    }
+
+    .greenContainer {
+        width: 100%;
+    }
+
+    .greenContainer p {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    // out products section media queries
+
+    .vegetableProducts {
+        justify-content: center;
+    }
+
+    // lastest news section medai queries 
+
+    .latestNewsTextContainer {
+        text-align: center;
+    }
+
+    .lastestNewsImageBoxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .blogImageContainer {
+        text-align: center;
+    }
+
+    // footer media queries
+
+    .fourContainer {
+        flex-direction: column;
+    }
+
+    .footerOneFourthBox {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footerIconContainer {
+        gap: 20px;
+    }
+
+    // contact page media queries
+
+    .contactAndForm {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .officePhoneEmailContainer {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .formContainer {
+        width: 100%;
+    }
+
+    .footerOneFourthBox p,
+    .footerOneFourthBox a,
+    .footerOneFourthBox form {
+        text-align: center;
+    }
+}
+
+// media query 480px 
+@media(max-width: 480px) {
+
+    // nav
+    .navContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .navContainer ul {
+        gap: 1rem;
+        margin-top: 9px;
+    }
+
+    // about section
+    .aboutContainer {
+        padding: 25px 0px;
+    }
+
+    // our products section
+    .ourProductsTitle {
+        padding: 25px 0px;
+    }
+}
