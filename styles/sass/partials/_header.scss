@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+header {
+    background-image: url(/assets/header/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 90px);
+}
+
+.headerContainer {
+    display: flex;
+    padding-top: 20vh;
+
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 5%;
+
+    p {
+        font-size: .75rem;
+        line-height: 1.1rem;
+    }
+}
+
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+
+}
+
+.headerImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.headerImageContainer img {
+    object-fit: cover;
+}

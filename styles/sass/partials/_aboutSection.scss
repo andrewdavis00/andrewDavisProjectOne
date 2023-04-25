@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+.aboutContainer {
+    display: flex;
+    padding: 60px 0px;
+}
+
+.aboutUsTitle,
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+.greenContainer {
+    width: 50%;
+
+}
+
+.greenContainer p {
+    background-color: $Green;
+    color: $White;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    border-radius: 24px;
+    height: 185px;
+    padding-top: 66px;
+    padding-left: 24px;
+}

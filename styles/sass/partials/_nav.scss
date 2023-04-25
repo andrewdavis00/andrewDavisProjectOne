@@ -1,0 +1,43 @@
+@use "./variables" as *;
+
+nav {
+    display: flex;
+    background-color: $White;
+    align-items: center;
+    height: 90px;
+
+    .wrapper {
+        display: flex;
+    }
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-left: 0px;
+
+    li a {
+        text-decoration: none;
+        color: $Black;
+        font-size: .75rem;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
+
+.navContainer {
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 83px;
+    min-width: 83px;
+    padding-top: 12px;
+}
+
+.cartIcon {
+    width: 25px;
+}

@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+.latestNewsSection {
+    background-color: $Green;
+    padding-bottom: 100px;
+}
+
+.latestNewsSection p {
+    font-size: .75rem;
+}
+
+.latestNewsTextContainer {
+    color: $White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.lastestNewsImageBoxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.blogImageContainer {
+    background-color: $White;
+    padding: 10px 10px 30px 10px;
+
+    // width: 32%;
+}
+
+.blogImageContainer p {
+    font-size: .75rem;
+}

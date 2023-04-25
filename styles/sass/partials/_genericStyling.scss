@@ -1,0 +1,38 @@
+@use "./variables" as *;
+
+// GENERIC STYLING
+
+html {
+    font-size: 125%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    background-color: $Green;
+    color: $White;
+    border-radius: 50px;
+    text-align: center;
+    font-size: .6rem;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    height: 33px;
+    font-weight: bold;
+
+}

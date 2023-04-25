@@ -1,0 +1,71 @@
+@use "./variables" as *;
+
+.ourProductsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+.ourProductsTitle p {
+    font-size: .75rem;
+    max-width: 535px;
+    text-align: center;
+    line-height: 1.1rem;
+}
+
+.vegetableProducts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mixVegetableContainer {
+    border: solid rgba(197, 197, 197, 0.16);
+    // border-width: thin;
+    // position: relative;
+    width: calc(25% - 20px);
+    // margin-bottom: 35px;
+    min-width: 200px;
+    font-size: .75rem;
+
+    h4 {
+        font-family: 'Lora', serif;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 400;
+    }
+}
+
+.mixVegetableContainerText {
+    padding: 0px 20px;
+}
+
+.mixVegetableContainer button {
+    position: relative;
+    bottom: -18px;
+    left: 40px;
+}
+
+.price {
+    color: $Green;
+}
+
+span.oldPrice {
+    text-decoration: line-through;
+}
+
+.ourProductsLoadMoreButton {
+    display: flex;
+    margin: 100px 0px;
+    justify-content: center;
+}

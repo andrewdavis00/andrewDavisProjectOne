@@ -1,343 +1,13 @@
 @use "./partials/variables" as *;
+@use "./partials/setup";
+@use "./partials/genericStyling";
+@use "./partials/nav";
+@use "./partials/header";
+@use "./partials/aboutSection";
+@use "./partials/ourProductsSection";
+@use "./partials/ourGallerySection";
+@use "./partials/latestNewsSection";
 @use "./partials/footer";
-
-
-html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
-
-*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
-
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
-
-// style guide 
-// Green #207200 
-// White #fff 
-// Black #1A2428
-// Main Heading Text (Providing Tasty...) Lora,
-// Bold (900) 
-// Section heading (About Us, Our Products) Section sub-heading (Providing best organic products) Lora,
-// Semi-Bold (700) 
-// Product names (Mix Vegetables) Lora,
-// Medium (600) 
-// Body text (lorem ipsum) Barlow,
-// Regular (400) 
-// Menu Items Barlow,
-// Semi-Bold (600)
-
-
-
-// GENERIC STYLING
-
-html {
-    font-size: 125%;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.wrapper {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-p {
-    font-family: 'Barlow', sans-serif;
-}
-
-button {
-    background-color: #207200;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: .6rem;
-    border: none;
-    padding: 5px;
-    width: 100px;
-    height: 33px;
-    font-weight: bold;
-    
-}
-
-
-
-// NAV
-
-nav {
-    display: flex;
-    background-color: #fff;
-    align-items: center;
-    height: 90px;
-    .wrapper {
-        display: flex;
-    }
-}
-
-
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    gap: 2rem;
-    padding-left: 0px;
-    li a {
-        text-decoration: none;
-        color: #1A2428;
-        font-size: .75rem;
-    }
-}
-
-
-.navContainer {
-    justify-content: space-between;
-}
-
-.logoContainer {
-    width: 83px;
-    min-width: 83px;
-    padding-top: 12px;
-}
-
-.cartIcon {
-    width: 25px;
-}
-
-// HEADER
-
-header {
-    background-image: url(/assets/header/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 90px);
-}
-
-.headerContainer {
-    display: flex;
-    padding-top: 20vh;
-
-}
-
-.textContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 5%;
-    p {
-        font-size: .75rem;
-        line-height: 1.1rem;
-    }
-}
-
-
-h1 {
-    font-family: 'Lora', serif;
-}
-
-.headerImageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-
-.headerImageContainer img {
-    object-fit: cover;
-}
-
-// ABOUT SECTION
-
-.aboutContainer {
-    display: flex;
-    padding: 60px 0px;
-}
-
-.aboutUsTitle, 
-h2 {
-    font-family: 'Lora', serif;
-    font-weight: 700;
-}
-
-.greenContainer {
-    width: 50%;
-    
-}
-
-.greenContainer p {
-    background-color: #207200;
-    color: #fff;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    border-radius: 24px;
-    height: 185px;
-    padding-top: 66px;
-    padding-left: 24px;
-}
-
-// OUR PRODUCTS SECTION
-
-.ourProductsTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0px;
-}
-
-h3 {
-    font-family: 'Lora', serif;
-    font-weight: 700;
-}
-
-.ourProductsTitle p {
-    font-size: .75rem;
-    max-width: 535px;
-    text-align: center;
-    line-height: 1.1rem;
-}
-
-.vegetableProducts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.mixVegetableContainer {
-    border: solid rgba(197, 197, 197, 0.16);
-    // border-width: thin;
-    // position: relative;
-    width: calc(25% - 20px);
-    // margin-bottom: 35px;
-    min-width: 200px;
-    font-size: .75rem;
-}
-
-.mixVegetableContainerText {
-    padding: 0px 20px;
-}
-
-.mixVegetableContainer button {
-    position: relative;
-    bottom: -18px;
-    left: 40px;
-}
-
-.price {
-    color: #207200;
-}
-
-span.oldPrice {
-    text-decoration: line-through;
-}
-
-.ourProductsLoadMoreButton {
-    display: flex;
-    margin: 100px 0px;
-    justify-content: center;
-}
-
-// OUR GALLERY SECTION
-
-.ourGalleryTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.ourGalleryTitle p {
-    font-size: .75rem;
-    text-align: center;
-    line-height: 1.1rem;
-}
-
-.ourGalleryTitle h3 {
-    text-align: center;
-}
-
-.ourGalleryTitle ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery {
-    background-image: url(/assets/grass.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 100px;
-        // height: 100vh;
-        // width: 100%;
-}
-
-.galleryImageContainerThird {
-    display: flex;
-    gap: 10px;
-}
-
-.galleryImageContainerThird img {
-    width: 33.33333%;
-    
-}
-
-.galleryImageContainerHalf {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.galleryImageContainerHalf img {
-    width: 50%;
-}
-
-
-// LATEST NEWS SECTION
-
-.latestNewsSection {
-    background-color: #207200;
-    padding-bottom: 100px;
-}
-
-.latestNewsSection p {
-    font-size: .75rem;
-}
-
-.latestNewsTextContainer {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-
-.lastestNewsImageBoxes {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-   
-}
-
-.blogImageContainer {
-    background-color: #fff;
-    padding: 10px 10px 30px 10px;
-    
-    // width: 32%;
-}
-
-.blogImageContainer p {
-    font-size: .75rem;
-}
-
-
 
 /* CONTACT PAGE */
 
@@ -370,7 +40,7 @@ span.oldPrice {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: $White;
     font-size: 1.5rem;
 }
 
@@ -395,7 +65,7 @@ span.oldPrice {
 
 .officePhoneEmailContainer div {
     box-shadow: 0px 0px 5px 0px rgba(130, 129, 129, 0.183);
-    border-left: solid thick #207200;
+    border-left: solid thick $Green;
     font-size: .75rem;
     line-height: 1.4rem;
     padding: 15px 15px 15px 35px;
@@ -438,10 +108,17 @@ span.oldPrice {
     width: 120px;
 }
 
+span {
+    font-weight: bold;
+}
+
 // media queries 
 // 1280, 1024, 940, 768, 480 
 
 @media (max-width: 1024px) {
+
+
+    // latest news section media queries 
 
     .lastestNewsImageBoxes {
     flex-direction: column;
@@ -450,7 +127,11 @@ span.oldPrice {
     .blogImageContainer {
         width: 350px;
         max-width: 80vw;
+        text-align: center;
+
     }
+
+
 }
 
 
@@ -460,6 +141,13 @@ span.oldPrice {
     //     display: flex;
     //     flex-direction: column;
     // }
+
+    header {
+        height: 100%;
+        .textContainer {
+            padding-right: 0%;
+        }
+    }
 
     .headerContainer {
         flex-direction: column;
@@ -482,6 +170,9 @@ span.oldPrice {
 
     .aboutContainer {
         flex-direction: column;
+        .textContainer {
+            padding-right: 0%;
+        }
     }
 
     .greenContainer {
@@ -490,6 +181,10 @@ span.oldPrice {
 
     .greenContainer p {
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
     }
 
     // out products section media queries
@@ -564,9 +259,15 @@ span.oldPrice {
 @media(max-width: 480px) {
 
     // nav
+    .navContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
     .navContainer ul {
         gap: 1rem;
-        padding-left: 6px;
+        margin-top: 9px;
     }    
 
     // about section
